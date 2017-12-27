@@ -6,11 +6,9 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:untitled-ontology-46="http://www.semanticweb.org/dorea.meyer/ontologies/2017/6/untitled-ontology-46#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
-        <owl:imports rdf:resource="http://www.semanticweb.org/dorea.meyer/ontologies/2017/6/untitled-ontology-46"/>
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
         <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
         <rdfs:comment xml:lang="en">HEALTH EVENT is the occurrence in the real World to be modeled. This occurrence is an abstract concept, as it generally cannot be determined what are its boundaries in time, space, or population units. 
@@ -411,14 +409,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/dorea.meyer/ontologies/2017/6/untitled-ontology-46#svala_codes -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/dorea.meyer/ontologies/2017/6/untitled-ontology-46#svala_codes">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
-    </rdf:Description>
     
 
 
