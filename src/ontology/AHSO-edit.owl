@@ -1,17 +1,25 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ahso#"
      xml:base="https://w3id.org/ahso"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:svala="urn:absolute:svala#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core="http://purl.obolibrary.org/obo/core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:svala="urn:absolute:svala#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:insect-anatomy="http://purl.obolibrary.org/obo/uberon/insect-anatomy#">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
         <owl:imports rdf:resource="urn:absolute:venom"/>
         <owl:imports rdf:resource="urn:absolute:svala"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2017-09-09/uberon.owl"/>
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
         <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
         <rdfs:comment xml:lang="en">HEALTH EVENT is the occurrence in the real World to be modeled. This occurrence is an abstract concept, as it generally cannot be determined what are its boundaries in time, space, or population units. 
