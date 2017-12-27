@@ -5,10 +5,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:svala="urn:absolute:svala#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
+        <owl:imports rdf:resource="urn:absolute:svala"/>
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
         <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
         <rdfs:comment xml:lang="en">HEALTH EVENT is the occurrence in the real World to be modeled. This occurrence is an abstract concept, as it generally cannot be determined what are its boundaries in time, space, or population units. 
@@ -717,6 +719,15 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000003"/>
         <rdfs:label xml:lang="en">Movement Registry</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- urn:absolute:svala#SVALA -->
+
+    <rdf:Description rdf:about="urn:absolute:svala#SVALA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
+        <rdfs:label>SVALA, Pathology, Sweden</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
