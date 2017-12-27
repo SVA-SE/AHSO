@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="urn:absolute:venom" uri="imports/venom.owl"/>
+    <uri id="Imports Wizard Entry" name="urn:absolute:svala" uri="imports/svala.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/ahso" uri="imports/svala.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1514402645711" name="https://w3id.org/ahso" uri="AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514402645711" name="shadowed:https://w3id.org/ahso" uri="imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514402645711" name="shadowed:https://w3id.org/ahso" uri="imports/venom.owl"/>
+    </group>
+</catalog>
