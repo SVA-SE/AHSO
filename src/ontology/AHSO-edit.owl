@@ -10,6 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
+        <owl:imports rdf:resource="urn:absolute:venom"/>
         <owl:imports rdf:resource="urn:absolute:svala"/>
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
         <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
@@ -727,6 +728,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <rdf:Description rdf:about="urn:absolute:svala#SVALA">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
         <rdfs:label>SVALA, Pathology, Sweden</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- urn:absolute:venom#venom -->
+
+    <rdf:Description rdf:about="urn:absolute:venom#venom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
     </rdf:Description>
 </rdf:RDF>
 
