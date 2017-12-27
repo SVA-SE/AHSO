@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/ahso" uri="imports/venom.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1514394645584" name="http://www.semanticweb.org/dorea.meyer/ontologies/2017/6/untitled-ontology-46" uri="imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514394645584" name="https://w3id.org/ahso" uri="AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514394645584" name="shadowed:https://w3id.org/ahso" uri="imports/venom.owl"/>
+    </group>
+</catalog>
