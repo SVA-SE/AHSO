@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/uberon/releases/2017-09-09/uberon.owl" uri="imports/uberon_svala_subset.owl"/>
     <uri id="Imports Wizard Entry" name="urn:absolute:venom" uri="imports/venom.owl"/>
     <uri id="Imports Wizard Entry" name="urn:absolute:svala" uri="imports/svala.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/ahso" uri="imports/svala.owl"/>
