@@ -5,9 +5,9 @@
     <uri id="Imports Wizard Entry" name="urn:absolute:svala" uri="imports/svala.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/ahso" uri="imports/svala.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1514403555568" name="http://purl.obolibrary.org/obo/uberon.owl" uri="imports/uberon_svala_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1514403555568" name="https://w3id.org/ahso" uri="AHSO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1514403555568" name="shadowed:https://w3id.org/ahso" uri="imports/svala.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1514403555568" name="shadowed:https://w3id.org/ahso" uri="imports/venom.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514448469423" name="http://purl.obolibrary.org/obo/uberon.owl" uri="imports/uberon_svala_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514448469423" name="https://w3id.org/ahso" uri="AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514448469423" name="shadowed:https://w3id.org/ahso" uri="imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514448469423" name="shadowed:https://w3id.org/ahso" uri="imports/venom.owl"/>
     </group>
 </catalog>

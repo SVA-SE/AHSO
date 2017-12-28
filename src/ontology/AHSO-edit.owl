@@ -153,15 +153,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#hasHealthInformation -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasHealthInformation">
-        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ahso#hasMember -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasMember">
@@ -409,6 +400,33 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:svala#SVALAhasLaymanSynonym -->
+
+    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasLaymanSynonym">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- urn:absolute:svala#SVALAhasSwedishLabel -->
+
+    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSwedishLabel">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- urn:absolute:svala#SVALAhasSynonym -->
+
+    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSynonym">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
     
 
 
