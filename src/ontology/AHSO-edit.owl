@@ -403,27 +403,27 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- urn:absolute:svala#SVALAhasLaymanSynonym -->
+    <!-- urn:absolute:svala#hasLaymanSynonym -->
 
-    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasLaymanSynonym">
+    <rdf:Description rdf:about="urn:absolute:svala#hasLaymanSynonym">
         <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Description>
     
 
 
-    <!-- urn:absolute:svala#SVALAhasSwedishLabel -->
+    <!-- urn:absolute:svala#hasSwedishLabel -->
 
-    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSwedishLabel">
+    <rdf:Description rdf:about="urn:absolute:svala#hasSwedishLabel">
         <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Description>
     
 
 
-    <!-- urn:absolute:svala#SVALAhasSynonym -->
+    <!-- urn:absolute:svala#hasSynonym -->
 
-    <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSynonym">
+    <rdf:Description rdf:about="urn:absolute:svala#hasSynonym">
         <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Description>
