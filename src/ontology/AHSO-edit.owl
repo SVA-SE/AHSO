@@ -371,6 +371,60 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+    <!-- https://w3id.org/ahso#AHSO_0002_000003 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000003">
+        <owl:inverseOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000004"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:label>contains observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000004 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000004">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label>observed in observation context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000011 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000011">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:label>observed in anatomical location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000012 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000012">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000009"/>
+        <rdfs:label>observed pathological process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000013 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000013">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000010"/>
+        <rdfs:label>observed morphology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -405,9 +459,11 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0000_000055 -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#AHSO_0000_000055">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000003"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label>has ID</rdfs:label>
     </owl:DatatypeProperty>
@@ -779,6 +835,83 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0001_000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000003"/>
         <rdfs:label xml:lang="en">Movement Registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0001_000011 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0001_000011">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label>Registered Animal Movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000001">
+        <rdfs:label>Observation context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label>Necropsy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000005 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:label>Pathological examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000006">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000005"/>
+        <rdfs:label>Ante Mortem Pathological Examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000007 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000005"/>
+        <rdfs:label>Post Mortem Pathological Examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000008">
+        <rdfs:label>Health finding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000009">
+        <rdfs:label>Pathological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0002_000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000010">
+        <rdfs:label>Morphological description</rdfs:label>
     </owl:Class>
     
 
