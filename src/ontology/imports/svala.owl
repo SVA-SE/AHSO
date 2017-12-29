@@ -58,21 +58,21 @@
     
 
 
-    <!-- urn:absolute:svala#hasLaymanSynonym -->
+    <!-- urn:absolute:svala#SVALAhasLaymanSynonym -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:svala#hasLaymanSynonym"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:svala#SVALAhasLaymanSynonym"/>
     
 
 
-    <!-- urn:absolute:svala#hasSwedishLabel -->
+    <!-- urn:absolute:svala#SVALAhasSwedishLabel -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:svala#hasSwedishLabel"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:svala#SVALAhasSwedishLabel"/>
     
 
 
-    <!-- urn:absolute:svala#hasSynonym -->
+    <!-- urn:absolute:svala#SVALAhasSynonym -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:svala#hasSynonym"/>
+    <owl:DatatypeProperty rdf:about="urn:absolute:svala#SVALAhasSynonym"/>
     
 
 
