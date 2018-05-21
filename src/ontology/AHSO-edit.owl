@@ -563,7 +563,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0000_000005 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000005">
-        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="en">Health and Surveillance actors</rdfs:label>
     </owl:Class>
     
 
@@ -598,7 +598,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000010">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
-        <rdfs:label xml:lang="en">Animal</rdfs:label>
+        <rdfs:label xml:lang="en">Individual</rdfs:label>
     </owl:Class>
     
 
