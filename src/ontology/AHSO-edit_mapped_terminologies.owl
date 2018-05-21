@@ -493,6 +493,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- urn:absolute:svala#SVALAhasLaymanSynonym -->
 
     <rdf:Description rdf:about="urn:absolute:svala#SVALAhasLaymanSynonym">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label>has layman synonym</rdfs:label>
     </rdf:Description>
@@ -502,6 +503,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- urn:absolute:svala#SVALAhasSwedishLabel -->
 
     <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSwedishLabel">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label>has swedish label</rdfs:label>
     </rdf:Description>
@@ -511,6 +513,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- urn:absolute:svala#SVALAhasSynonym -->
 
     <rdf:Description rdf:about="urn:absolute:svala#SVALAhasSynonym">
+        <rdfs:domain rdf:resource="urn:absolute:svala#SVALA"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label>has synonym</rdfs:label>
     </rdf:Description>
@@ -738,6 +741,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+    <!-- https://w3id.org/ahso#AHSO_0000_000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000026">
+        <rdfs:label>Mapped terminologies</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#AHSO_0001_000001 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0001_000001">
@@ -902,6 +913,23 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000010">
         <rdfs:label>Morphological description</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- urn:absolute:svala#SVALA -->
+
+    <rdf:Description rdf:about="urn:absolute:svala#SVALA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
+        <rdfs:label>SVALA, Pathology, Sweden</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- urn:absolute:venom#venom -->
+
+    <rdf:Description rdf:about="urn:absolute:venom#venom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000026"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
