@@ -246,7 +246,9 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0000_000041">
         <owl:inverseOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000052"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
         <rdfs:label>has subject unit</rdfs:label>
     </owl:ObjectProperty>
@@ -364,8 +366,10 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0000_000052 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0000_000052">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
         <rdfs:label>is subject unit of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -395,10 +399,12 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0002_000011 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000011">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-        <rdfs:label>observed in anatomical location</rdfs:label>
+        <rdfs:label>has anatomical location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -406,6 +412,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0002_000012 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000012">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000009"/>
@@ -417,10 +424,55 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0002_000013 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0002_000013">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000008"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000010"/>
         <rdfs:label>observed morphology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000005 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0003_000005">
+        <owl:inverseOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000006"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label xml:lang="en">is member of system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000006 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0003_000006">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label xml:lang="en">has member activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000007 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0003_000007">
+        <owl:inverseOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000008"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">has sample</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000008 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#AHSO_0003_000008">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000001"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label xml:lang="en">is sample of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -464,6 +516,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000004"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label>has ID</rdfs:label>
     </owl:DatatypeProperty>
@@ -905,19 +958,11 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#AHSO_0003_000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000001">
-        <rdfs:label xml:lang="en">Surveillance design</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ahso#AHSO_0003_000002 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000002">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000001"/>
-        <rdfs:label xml:lang="en">Hazard specific surveillance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label xml:lang="en">Surveillance system</rdfs:label>
     </owl:Class>
     
 
@@ -925,8 +970,8 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#AHSO_0003_000003 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000003">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000002"/>
-        <rdfs:label xml:lang="en">Hazard specific activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0002_000001"/>
+        <rdfs:label xml:lang="en">Surveillance activity</rdfs:label>
     </owl:Class>
     
 
