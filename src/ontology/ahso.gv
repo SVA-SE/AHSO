@@ -1,0 +1,28 @@
+#require(DiagrammeR)
+
+digraph {
+  
+  #graph [splines=ortho]
+
+node [shape = box]
+  "sample" "observation" "observation context"
+
+node [shape = circle]
+  "id"
+  
+
+  "sample" -> "observation" [label= "is a member of context" splines=ortho]
+  "observation" -> "observation context" [label= "is a member of context"]
+  "observation context" -> "observation" [label= "has context member"]
+  "observation" -> "sample" [label= "has context member"]
+  
+  
+  
+  "sample" -> "id"
+  "observation context" -> "observation context"
+}
+  
+
+
+
+
