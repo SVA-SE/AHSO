@@ -4,25 +4,56 @@ digraph {
   
   #graph [splines=ortho]
 
-node [shape = box]
-  "sample" "observation" "observation context"
+#SKELETON classes
+node [shape = box, style=filled, fillcolor=yellow]
+  "sample" 
+  "observation" 
+  "observation context"
+ # {rank=same;"sample" "observation" "observation context"}
+  
+#other classes
+node [shape = box, style=filled, fillcolor=white]
+"anatomical entity"
+"pathological process"
+"morphological description"
+"clinical signs"
+"diseases"
+"hazard"
+"registry"
+"health and surveillance actors"
+"geographical information"
+"population unit"
+"zoographical information"
 
-node [shape = circle]
-  "id"
+
+#data inputs
+node [shape = circle, style=filled, fixedsize = true, fillcolor = honeydew]
+  "date/time"
+  "literal"
+  "integer"
   
 
+#general OBJECT properties
   "sample" -> "observation" [label= "is a member of context" splines=ortho]
   "observation" -> "observation context" [label= "is a member of context"]
   "observation context" -> "observation" [label= "has context member"]
   "observation" -> "sample" [label= "has context member"]
   
+
+
+#transitive properties
+
+
+#DATA properties
+
   
   
-  "sample" -> "id"
-  "observation context" -> "observation context"
 }
   
 
+#rank?
+#ortho for main and splines for others?
+#group subclasses?
 
 
 
