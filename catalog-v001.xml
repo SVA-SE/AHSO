@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="http://purl.obolibrary.org/obo/uberon.owl" uri="src/ontology/imports/uberon_svala_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="https://w3id.org/ahso" uri="AHSO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit_mapped_terminologies.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/svala.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1529053978293" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/venom.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="http://purl.obolibrary.org/obo/uberon.owl" uri="src/ontology/imports/uberon_svala_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="https://w3id.org/ahso" uri="AHSO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-core-development.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit_mapped_terminologies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1529668648323" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/venom.owl"/>
     </group>
 </catalog>
