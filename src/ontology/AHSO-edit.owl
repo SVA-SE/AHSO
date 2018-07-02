@@ -692,45 +692,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
  
-
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000015 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000015">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000014"/>
-        <rdfs:label xml:lang="en">days</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000016 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000016">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000014"/>
-        <rdfs:label xml:lang="en">weeks</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000017 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000017">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000014"/>
-        <rdfs:label xml:lang="en">months</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000018 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000018">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000014"/>
-        <rdfs:label xml:lang="en">years</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000019 -->
+ <!-- https://w3id.org/ahso#AHSO_0000_000019 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000019">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000002"/>
