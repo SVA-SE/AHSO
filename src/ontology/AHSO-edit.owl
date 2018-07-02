@@ -691,14 +691,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     </owl:Class>
     
 
-
-    <!-- https://w3id.org/ahso#AHSO_0000_000014 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000014">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000058"/>
-        <rdfs:label xml:lang="en">Age Units</rdfs:label>
-    </owl:Class>
-    
+ 
 
 
     <!-- https://w3id.org/ahso#AHSO_0000_000015 -->
@@ -809,12 +802,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#AHSO_0000_000058 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000058">
-        <rdfs:label xml:lang="en">Units</rdfs:label>
-    </owl:Class>
-    
+  
 
 
 
