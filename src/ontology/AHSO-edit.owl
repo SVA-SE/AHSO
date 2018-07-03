@@ -17,7 +17,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:insect-anatomy="http://purl.obolibrary.org/obo/uberon/insect-anatomy#">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2017-09-09/uberon.owl"/>
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
         <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
         <rdfs:comment xml:lang="en">HEALTH EVENT is the occurrence in the real World to be modeled. This occurrence is an abstract concept, as it generally cannot be determined what are its boundaries in time, space, or population units. 
