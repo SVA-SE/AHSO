@@ -78,6 +78,59 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+    <!-- https://w3id.org/ahso#SSD_catalogue -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_catalogue">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation points to the specific catalague, within SSD2, form which terms were imported.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_termCode -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termCode">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives the specific code for the concept include din the ontology. Look for this code in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;.
+
+Full names are stored in the property &quot;SSD_termExtendedName&quot;.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_termExtendedName -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termExtendedName">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives the specific term name for the concept include din the ontology. Look for this name in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;. Codes are stored in the property &quot;SSD_termCode&quot;.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1021,6 +1074,218 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000004">
         <rdfs:label xml:lang="en">Sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000014">
+        <rdfs:label xml:lang="en">Hazard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_1 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Biogenic amines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_10 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_10">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Residue definition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_11 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_11">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Toxins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_12 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_12">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Veterinary medicinal products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_13 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_13">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Other</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_2 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Chemical elements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_3 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Food additives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_4 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Microorganisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_6 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_6">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Nutrients</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_7 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_7">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Organic contaminants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_8 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_8">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Pesticide residues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#RAKIP_Hazard_type_9 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_9">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000014"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Radioactivity and isotopes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S000A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S000A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Animal sample</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S000A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Animal sample</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S019A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S019A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Food sample</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S019A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Food sample</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S023A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S023A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Food simulant</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S023A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Food simulant</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S026A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S026A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Feed sample</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S026A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Feed sample</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S027A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S027A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Environmental sample</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S027A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Environmental sample</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S030A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S030A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Unknown</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S030A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Unknown</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#S031A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#S031A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000004"/>
+        <rdfs:label xml:lang="en">Contact material</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S031A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Contact material</SSD_termExtendedName>
     </owl:Class>
     
 
