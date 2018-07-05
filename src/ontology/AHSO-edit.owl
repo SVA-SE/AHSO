@@ -2059,8 +2059,7 @@ This annotation gives the specific term name for the concept include din the ont
     <!-- https://w3id.org/ahso#AHSO_0000_000020 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000020">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000002"/>
-        <rdfs:label xml:lang="en">Production Type</rdfs:label>
+        <rdfs:label xml:lang="en">Animal Production parameters</rdfs:label>
     </owl:Class>
     
 
