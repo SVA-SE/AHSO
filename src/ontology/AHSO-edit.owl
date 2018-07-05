@@ -174,6 +174,12 @@ This annotation gives the specific term name for the concept include din the ont
     
 
 
+    <!-- https://w3id.org/ahso#SSD_termScopeNote -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termScopeNote"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2288,6 +2294,136 @@ This annotation gives the specific term name for the concept include din the ont
     
 
 
+    <!-- https://w3id.org/ahso#AHSO_0003_000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000017">
+        <rdfs:label xml:lang="en">Surveillance and monitoring parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000017"/>
+        <rdfs:label xml:lang="en">sampling strategy</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPSTR</SSD_catalogue>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000017"/>
+        <rdfs:label xml:lang="en">sampling context</rdfs:label>
+        <SSD_catalogue xml:lang="en">PRGTYP</SSD_catalogue>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000017"/>
+        <rdfs:label xml:lang="en">sampler</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPLR</SSD_catalogue>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label xml:lang="en">Official programme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX01A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX01A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX01A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampling performed by the industry.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX02A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX02A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX02A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampling performed under the control of the competent authority.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX03A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX03A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official and industry sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX03A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official and industry sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampling performed under the control of the competent authority and by industry.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX04A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX04A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HACCP and own check</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX04A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HACCP and own check</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programme designed to effectively control processes by identifying critical control points (CCPs), establishing critical limits for each CCP, monitoring CCPs, gathering data, keeping records, and implementing corrective actions and verification procedures. HACCP is applied by the food or feed business operators (Codex Alimentarius).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX05A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX05A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX05A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampling performed by private people/entities like pet owner, farmer, pet shop employee, private veterinarian (on request of a farmer or a pet owner or another private entity). Private sampler should be used in the following cases: the owner of a pet who takes a sample from its clinical suspected pet animal; the owner or vet of a zoo/circus who collects samples from animals of the zoo/circus to be diagnosed for a specific disease. Private sampler should not be used when veterinarians/owner/hunters are commissioned by the Competent Authorities or perform sampling within a specific legislation and for which a pre-determined sampling programme for monitoring/surveillance exists (in this case the sampler should be ‘Official sampling’).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX06A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX06A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official, based on Regulation 854/2004</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX06A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official, based on Regulation 854/2004</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official, based on Regulation 854/2004</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#CX99A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#CX99A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000020"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not applicable</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CX99A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not applicable</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#E010A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#E010A">
@@ -3267,6 +3403,270 @@ This annotation gives the specific term name for the concept include din the ont
     
 
 
+    <!-- https://w3id.org/ahso#K005A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K005A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (National) programme</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K005A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (National) programme</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K009A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K009A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (EU) programme</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K009A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (EU) programme</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K010A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K010A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet study</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K010A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diet study</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K012A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K012A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry/ private programme</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K012A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industry/ private programme</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K013A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K013A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K013A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study involving a sample of units selected from a larger, well-delineated population. This (target) population is the entire set of units to which the findings of the survey are to be extrapolated. The units to examine are to be selected randomly (Rothman, 1986; Noordhuizen et al., 2001).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K014A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K014A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other/ Combination of several programmes</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K014A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other/ Combination of several programmes</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K018A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K018A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (National and EU) programme</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K018A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (National and EU) programme</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K019A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K019A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EU increased control programme on imported food</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K019A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EU increased control programme on imported food</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K020A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K020A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical investigations</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K020A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical investigations</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical investigation in animals is considered as a selective way of sampling and results in a number of samples obtained in a passive way. The samples obtained and analysed via clinical investigations are heterogeneous with relation to the species (matrix) as well as type of samples. The reason for the analysis of the samples is very often a clinical examination of (diseased) animals by a veterinarian and/or specific clinical signs observed by the farmer and/or veterinarian.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K021A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K021A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control and eradication programmes</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K021A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control and eradication programmes</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control programme—programme applying measures designed to reduce the frequency of existing infection or contamination to levels biologically and/or economically justifiable or otherwise of little consequence. Eradication programme—programme applying measures aimed at eliminating selected zoonotic agents from a defined area. In the context of Directive 77/391/EEC  the eradication programmes are so devised that, on their completion, herds are classified as officially free of brucellosis/tuberculosis.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K022A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K022A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K022A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">system of collecting, analysing and disseminating data on the occurrence of zoonoses, zoonotic agents and antimicrobial resistance related thereto. As opposed to surveillance, no active control measures are taken when positive cases are detected (Directive 2003/99/EC).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K023A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K023A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K022A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - active</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K023A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - active</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">active monitoring programme of zoonotic agents or antimicrobial resistance in food and animals, based on random sampling strategies of the population of interest, stratified according to the relevant subcategories of the population. The sampling strategy should ensure that the sample is representative of the population of interest and that the sampling method is robust. A planned monitoring of wild life for e.g Trichinella or Echinococcus via organised hunting schemes should be considered as active monitoring.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K024A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K024A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K022A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - passive</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K024A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - passive</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">passive monitoring programme of zoonotic agents or antimicrobial resistance that includes information from diagnostic testing, or a representative selection of this information. Data on the prevalence of the zoonotic agents and on antimicrobial resistance provided by passive monitoring programmes are typically derived from diseased animals (clinical investigations, observed syndromes, etc).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K025A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K025A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K022A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - EFSA specifications</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K025A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring - EFSA specifications</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a monitoring system following harmonised technical specifications prepared by EFSA.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K026A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K026A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K026A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a careful observation of one or more food or feed businesses, food or feed business operators or their activities (in the context of the food and feed control Regulation (EC) No 882/2004). In general, it means a close and continuous observation for the purpose of control. As opposed to monitoring, active control measures are frequently taken when positive cases are detected. This type of programme does not necessarily have a defined target for reducing the occurrence of diseases/contamination.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K027A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K027A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K013A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey - EU baseline survey</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K027A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey - EU baseline survey</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a EU study involving a sample of units selected from a larger, well-delineated population. This (target) population is the entire set of units to which findings of the survey are to be extrapolated. The units to examine are to be selected randomly.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K028A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K028A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K013A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey - national survey</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K028A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survey - national survey</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a national study involving a sample of units selected from a larger, well-delineated population. This (target) population is the entire set of units to which findings of the survey are to be extrapolated. The units to examine are to be selected randomly.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K029A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K029A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K029A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K030A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K030A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K026A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance active</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K030A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance active</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K031A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K031A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K026A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance passive</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K031A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance passive</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K032A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K032A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outbreak investigation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K032A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outbreak investigation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K033A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K033A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RASSF alert notification</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K033A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RASSF alert notification</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#K034A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#K034A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#K026A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance, based on Regulation 2073</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K034A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance, based on Regulation 2073</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is used to report the samples collected and analysed according to the Regulation 2073/2005 on microbiological criteria. These samples can be taken either to check the compliance with Process hygiene criteria (Salmonella in carcases (2.1.3, 2.1.4, 2.1.5)) or with Food Safety criteria (Salmonella in meat and meat products (1.4 to 1.20, 1.22; 1.23; 1.28), Listeria monocytogenes (1.1, 1.2, 1.3), Staphylococcus enterotoxins (1.21), Cronobacter (1.24), Histamine (1.26; 1.27;1.27a), STEC (1.29)).</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#RAKIP_Hazard_type_1 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#RAKIP_Hazard_type_1">
@@ -3503,6 +3903,77 @@ This annotation gives the specific term name for the concept include din the ont
         <SSD_catalogue xml:lang="en">MTXTYP</SSD_catalogue>
         <SSD_termCode xml:lang="en">S031A</SSD_termCode>
         <SSD_termExtendedName xml:lang="en">Contact material</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#ST10A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#ST10A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objective sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST10A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objective sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objective sampling—planned strategy based on the selection of a random sample, which is statistically representative of the population to be analysed. Each unit, within the framework population, has a specified probability of being selected. This strategy provides data from which statistical inference can be implemented. That means that the results inferred are comparable. Objective sampling is often the case in monitoring and surveillance schemes as well as in surveys.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#ST20A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#ST20A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selective sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST20A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selective sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selective sampling—planned strategy whereby the selection of the sample is from previously defined ‘high-risk’ population groups. Samples are normally selected to either illustrate or document unsatisfactory conditions or suspected adulteration of a product. The sampling is deliberately biased and is directed at the particular products or manufacturers. The sampling procedure can be random or not. The specification of the ‘high-risk’ population comes from either scientific studies or previous analysis and information of other regions or countries. The comparability of the results lies on both the definition of the population to be analysed and the way the samples have been drawn</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#ST30A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#ST30A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspect sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST30A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspect sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspect sampling—unplanned selection of a sample whereby the individual units are selected based on the recent judgement and experience regarding the population, lot or sampling frame, e.g. earlier positive samples. The samples obtained from this procedure are not randomly extracted.</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#ST40A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#ST40A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convenient sampling</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST40A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convenient sampling</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convenient sampling—is used in exploratory research when the researcher is interested in getting an inexpensive approximation of the truth. The samples are selected because they are convenient and easy to obtain. This non-probability method is often used during preliminary research efforts to get a gross estimate of the results, without incurring the cost or time required to select a random sample. This methodology is potentially subject to serious bias</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#ST50A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#ST50A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Census</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST50A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Census</SSD_termExtendedName>
+        <SSD_termScopeNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Census—strategy whereby all units of the population are sampled</SSD_termScopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#STXXA -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#STXXA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000018"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not specified</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STXXA</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not specified</SSD_termExtendedName>
     </owl:Class>
     
 
