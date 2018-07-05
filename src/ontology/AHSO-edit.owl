@@ -2341,6 +2341,158 @@ This annotation gives the specific term name for the concept include din the ont
     
 
 
+    <!-- https://w3id.org/ahso#AHSO_0003_000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000022">
+        <rdfs:label xml:lang="en">Laboratorial analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT01A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT01A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYTYP</SSD_catalogue>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT01A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT02A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT02A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serotyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT02A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serotyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT03A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT03A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phagetyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT03A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phagetyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT04A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT04A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susceptibility test</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT04A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susceptibility test</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT05A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT05A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speciation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT05A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speciation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT06A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT06A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screening</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT06A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screening</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT07A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT07A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantification</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT07A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantification</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT08A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT08A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confirmation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT08A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confirmation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT09A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT09A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determination</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT09A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determination</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT10A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT10A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enumeration</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT10A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enumeration</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT11A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT11A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate characterisation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT11A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate characterisation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT12A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT12A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminatory test</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT12A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminatory test</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT13A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT13A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular characterisation/genotyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT13A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular characterisation/genotyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#CX01A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#CX01A">
@@ -3311,6 +3463,31 @@ This annotation gives the specific term name for the concept include din the ont
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering on aircraft or ship or train</rdfs:label>
         <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E990A</SSD_termCode>
         <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering on aircraft or ship or train</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#F099A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#F099A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000022"/>
+        <rdfs:label xml:lang="en">Microbiological tests</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYMD</SSD_catalogue>
+        <SSD_termCode xml:lang="en">F099A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Microbiological tests</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#F163A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#F163A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AT01A"/>
+        <rdfs:label xml:lang="en">ISO 10272-1:2006  Campylobacter</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYMD</SSD_catalogue>
+        <SSD_termCode xml:lang="en">F163A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">ISO 10272-1:2006  Campylobacter</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Microbiology of food and animal feeding stuffs -- Horizontal method for detection and enumeration of Campylobacter spp. -- Part 1: Detection method</SSD_termScopeNote>
     </owl:Class>
     
 
