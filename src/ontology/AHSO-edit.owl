@@ -2005,7 +2005,7 @@ This annotation gives the specific term name for the concept include din the ont
     <!-- https://w3id.org/ahso#AHSO_0000_000008 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000008">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000015"/>
         <rdfs:label xml:lang="en">Animal owner</rdfs:label>
     </owl:Class>
     
@@ -2014,7 +2014,7 @@ This annotation gives the specific term name for the concept include din the ont
     <!-- https://w3id.org/ahso#AHSO_0000_000009 -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000009">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000015"/>
         <rdfs:label xml:lang="en">Veterinarian</rdfs:label>
     </owl:Class>
     
@@ -2290,6 +2290,916 @@ This annotation gives the specific term name for the concept include din the ont
 
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000014">
         <rdfs:label xml:lang="en">Hazard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
+        <rdfs:label xml:lang="en">roles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0003_000016 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000016">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000_000005"/>
+        <rdfs:label xml:lang="en">establishments</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPNT</SSD_catalogue>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E010A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E010A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Border inspection activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E010A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Border inspection activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E011A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E011A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veterinary activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E011A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veterinary activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E012A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E012A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoo</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E012A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoo</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E013A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E013A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E011A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veterinary clinics</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E013A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veterinary clinics</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E098A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E098A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E098A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unspecified</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E099A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E099A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Others</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E099A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Others</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E100A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E100A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary production</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E100A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary production</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E101A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E101A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farm</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E101A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farm</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E110A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E110A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E101A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Growing crops</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E110A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Growing crops</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E112A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E112A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bee hives</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E112A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bee hives</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E120A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E120A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E101A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rearing of animals</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E120A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rearing of animals</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E121A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E121A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E101A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breeding</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E121A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breeding</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E130A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E130A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E101A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support activities to agriculture</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E130A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support activities to agriculture</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E131A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E131A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E130A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support activities for crop production</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E131A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support activities for crop production</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E132A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E132A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E130A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial insemination station</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E132A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial insemination station</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E139A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E139A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E130A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other animal production support activity</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E139A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other animal production support activity</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E150A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E150A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishery activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E150A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishery activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E151A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E151A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E150A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishing and fish processing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E151A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishing and fish processing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E152A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E152A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E150A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquaculture</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E152A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aquaculture</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E153A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E153A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E150A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E153A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fishing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E160A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E160A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatchery</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E160A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatchery</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E170A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E170A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Game handling estabilishment</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E170A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Game handling estabilishment</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E180A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E180A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunting</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E180A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunting</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E190A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E190A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wildlife research station</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E190A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wildlife research station</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E191A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E191A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E100A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural habitat</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E191A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural habitat</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E210A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E210A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital or medical care facility</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E210A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital or medical care facility</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E220A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E220A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residential institution (nursing home or prison or boarding school)</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E220A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residential institution (nursing home or prison or boarding school)</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E230A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E230A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E230A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E240A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E240A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E220A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School or kindergarten</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E240A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School or kindergarten</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E300A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E300A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacturing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E300A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacturing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E301A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E301A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E300A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processing plant</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E301A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processing plant</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E310A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E310A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E300A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat processing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E310A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat processing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E311A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E311A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slaughterhouse</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E311A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slaughterhouse</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E312A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E312A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cutting plant</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E312A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cutting plant</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E313A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E313A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat mincing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E313A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat mincing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E314A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E314A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat preparing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E314A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat preparing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E315A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E315A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical separation of meat</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E315A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical separation of meat</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E319A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E319A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E310A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other meat processing activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E319A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other meat processing activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E320A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E320A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E300A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish processing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E320A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish processing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E321A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E321A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E320A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish freezing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E321A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish freezing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E329A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E329A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E320A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish processing activities, other than freezing</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E329A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish processing activities, other than freezing</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E350A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E350A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E300A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of prepared animal feeds</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E350A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of prepared animal feeds</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E351A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E351A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E350A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of compound feedingstuffs</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E351A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of compound feedingstuffs</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E352A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E352A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E350A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of feed additives and pre-mixtures</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E352A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of feed additives and pre-mixtures</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E353A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E353A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E350A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of prepared pet foods</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E353A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacture of prepared pet foods</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E354A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E354A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E350A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed mill</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E354A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feed mill</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E355A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E355A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E300A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other processing activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E355A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other processing activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E400A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E400A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water collection or treatment or supply</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E400A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water collection or treatment or supply</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E410A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E410A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E400A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water distribution system</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E410A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water distribution system</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E420A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E420A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E400A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water source</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E420A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water source</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E430A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E430A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E400A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water treatment plant</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E430A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water treatment plant</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E500A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E500A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distribution: wholesale and retail sale</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E500A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distribution: wholesale and retail sale</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E510A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E510A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E500A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wholesale</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E510A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wholesale</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E520A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E520A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E500A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retail</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E520A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retail</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E530A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E530A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E500A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import activities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E530A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Import activities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E600A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E600A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Packing centre</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E600A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Packing centre</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E610A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E610A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E600A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re-wrapping centre</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E610A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re-wrapping centre</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E700A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E700A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storage</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E700A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storage</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E710A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E710A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E700A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold storage</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E710A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold storage</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E720A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E720A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conservation facilities</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E720A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conservation facilities</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E800A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E800A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transport</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E800A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transport</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E810A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E810A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E800A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Road transport</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E810A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Road transport</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E820A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E820A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E800A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rail transport</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E820A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rail transport</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E830A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E830A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E800A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water transport</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E830A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water transport</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E840A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E840A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E800A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air transport</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E840A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air transport</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E850A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E850A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Travel abroad</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E850A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Travel abroad</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E900A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E900A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E900A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E910A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E910A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restaurant or Cafe or Pub or Bar or Hotel or Catering service</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E910A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restaurant or Cafe or Pub or Bar or Hotel or Catering service</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E920A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E920A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile retailer or market/street vendor</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E920A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile retailer or market/street vendor</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E930A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E930A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take-away or fast-food outlet</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E930A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take-away or fast-food outlet</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E940A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E940A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canteen or workplace catering</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E940A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canteen or workplace catering</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E950A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E950A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporary mass catering (fairs or festivals)</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E950A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporary mass catering (fairs or festivals)</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E960A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E960A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camp or picnic</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E960A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camp or picnic</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E970A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E970A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disseminated cases</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E970A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disseminated cases</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E971A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E971A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E970A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple places of exposure in one country</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E971A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple places of exposure in one country</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E972A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E972A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E970A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple places of exposure in more than one country</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E972A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple places of exposure in more than one country</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E980A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E980A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E980A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E981A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E981A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nursery</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E981A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nursery</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E982A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E982A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic distribution system for raw milk</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E982A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic distribution system for raw milk</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E983A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E983A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000016"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official kennel</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E983A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official kennel</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#E990A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#E990A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#E900A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering on aircraft or ship or train</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E990A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catering on aircraft or ship or train</SSD_termExtendedName>
     </owl:Class>
     
 
