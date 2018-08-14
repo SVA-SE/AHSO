@@ -823,7 +823,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#home_slaughter -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#home_slaughter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#slaughter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
         <rdfs:label xml:lang="en">Home slaughter</rdfs:label>
     </owl:Class>
     
@@ -937,15 +937,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <owl:Class rdf:about="https://w3id.org/ahso#sex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#zoo_info"/>
         <rdfs:label xml:lang="en">Sex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#slaughter -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#slaughter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
-        <rdfs:label xml:lang="en">Slaughter</rdfs:label>
     </owl:Class>
     
 
