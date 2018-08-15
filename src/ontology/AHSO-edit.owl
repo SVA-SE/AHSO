@@ -678,24 +678,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#AHSO_0002_000006 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000006">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#pathological_examination"/>
-        <rdfs:label>Ante Mortem Pathological Examination</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0002_000007 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000007">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#pathological_examination"/>
-        <rdfs:label>Post Mortem Pathological Examination</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ahso#actors -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#actors">
@@ -823,7 +805,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#home_slaughter -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#home_slaughter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#slaughter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
         <rdfs:label xml:lang="en">Home slaughter</rdfs:label>
     </owl:Class>
     
@@ -881,15 +863,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#pathological_examination -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#pathological_examination">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
-        <rdfs:label>Pathological examination</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ahso#population_unit -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#population_unit">
@@ -937,15 +910,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <owl:Class rdf:about="https://w3id.org/ahso#sex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#zoo_info"/>
         <rdfs:label xml:lang="en">Sex</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#slaughter -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#slaughter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
-        <rdfs:label xml:lang="en">Slaughter</rdfs:label>
     </owl:Class>
     
 
