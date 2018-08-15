@@ -678,24 +678,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
-    <!-- https://w3id.org/ahso#AHSO_0002_000006 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000006">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#pathological_examination"/>
-        <rdfs:label>Ante Mortem Pathological Examination</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0002_000007 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0002_000007">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#pathological_examination"/>
-        <rdfs:label>Post Mortem Pathological Examination</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ahso#actors -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#actors">
@@ -877,15 +859,6 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <owl:Class rdf:about="https://w3id.org/ahso#observation_context">
         <rdfs:label>Observation context</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#pathological_examination -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#pathological_examination">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#observation"/>
-        <rdfs:label>Pathological examination</rdfs:label>
     </owl:Class>
     
 
