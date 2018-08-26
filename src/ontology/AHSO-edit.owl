@@ -218,6 +218,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#containsRecordsOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#containsRecordsOf">
@@ -247,7 +248,6 @@ This annotation gives any additional notes. Look for this name in the specific c
 
 
     <!-- https://w3id.org/ahso#hasAgeCategory -->
-
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasAgeCategory">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#population_unit"/>
@@ -366,7 +366,7 @@ This annotation gives any additional notes. Look for this name in the specific c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasSpecies">
         <rdfs:domain rdf:resource="https://w3id.org/ahso#population_unit"/>
-        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000025"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#species"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ahso#hasBreed"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#isBreedOfSpecies"/>
@@ -494,6 +494,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:domain rdf:resource="https://w3id.org/ahso#observation"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#observation_context"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#sample"/>
+
         <rdfs:range rdf:resource="https://w3id.org/ahso#animal_production_parameters"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ahso#containsObservation"/>
@@ -503,6 +504,7 @@ This annotation gives any additional notes. Look for this name in the specific c
             <rdf:Description rdf:about="https://w3id.org/ahso#containsSample"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasSubjectProductionType"/>
         </owl:propertyChainAxiom>
+
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ahso#hasSubject"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasProductionType"/>
@@ -554,7 +556,8 @@ This annotation gives any additional notes. Look for this name in the specific c
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#isBreedOfSpecies">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#breed"/>
-        <rdfs:range rdf:resource="https://w3id.org/ahso#AHSO_0000_000025"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#species"/>
+
         <rdfs:label xml:lang="en">isBreedOfSpecies</rdfs:label>
     </owl:ObjectProperty>
     
@@ -744,6 +747,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:domain rdf:resource="https://w3id.org/ahso#registry"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#sample"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+
         <terms:description xml:lang="en">Identification code.</terms:description>
         <rdfs:label xml:lang="en">hasID</rdfs:label>
     </owl:DatatypeProperty>
@@ -758,6 +762,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#isRecordedonDateTime -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#isRecordedonDateTime">
@@ -767,6 +772,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">isRecordedOnDateTime</rdfs:label>
     </owl:DatatypeProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#occursOnDateTime -->
@@ -3427,6 +3433,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#K030A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#K030A">
@@ -3436,6 +3443,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surveillance active</SSD_termExtendedName>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#K031A -->
@@ -3449,6 +3457,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#K032A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#K032A">
@@ -3460,6 +3469,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#K033A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#K033A">
@@ -3469,6 +3479,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RASSF alert notification</SSD_termExtendedName>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#K034A -->
@@ -3483,6 +3494,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#PM_patho -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#PM_patho">
@@ -3490,6 +3502,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label>Post Mortem Pathological Examination</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#RF-00000050-MCG -->
@@ -3504,6 +3517,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#RF-00000052-MCG -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#RF-00000052-MCG">
@@ -3514,6 +3528,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <SSD_termExtendedName xml:lang="en">thermotolerant Campylobacter, unspecified</SSD_termExtendedName>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#RF-00000066-MCG -->
@@ -3528,6 +3543,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#S000A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#S000A">
@@ -3540,6 +3556,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#S019A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#S019A">
@@ -3550,6 +3567,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <SSD_termExtendedName xml:lang="en">Food sample</SSD_termExtendedName>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#S023A -->
@@ -3723,6 +3741,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#biogenic_amines -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#biogenic_amines">
@@ -3733,6 +3752,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#birth -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#birth">
@@ -3740,6 +3760,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Birth</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#breed -->
@@ -3779,6 +3800,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#declared_movement -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#declared_movement">
@@ -3807,6 +3829,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#fallen_stock_destroyed_farm -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#fallen_stock_destroyed_farm">
@@ -3814,6 +3837,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Fallen stock destroyed on farm</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#fallen_stock_not_destroyed_farm -->
@@ -3825,6 +3849,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#female -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#female">
@@ -3832,6 +3857,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Female</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#food_additives -->
@@ -3860,6 +3886,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#home_slaughter -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#home_slaughter">
@@ -3867,6 +3894,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Home slaughter</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#lab_analysis -->
@@ -3896,6 +3924,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#movement_registry -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#movement_registry">
@@ -3903,6 +3932,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Movement Registry</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#necropsy -->
@@ -3932,12 +3962,14 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#observation_context -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#observation_context">
         <rdfs:label>Observation context</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#organic_contaminants -->
@@ -3960,6 +3992,7 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#pathological_examination -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#pathological_examination">
@@ -3967,6 +4000,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label>Pathological examination</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#pesticide_residues -->
@@ -3979,12 +4013,14 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+
     <!-- https://w3id.org/ahso#population_unit -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#population_unit">
         <rdfs:label xml:lang="en">Population unit</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#radioactivity_and_isotopes -->
@@ -3995,6 +4031,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">Radioactivity and isotopes</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#registered_animal_movement -->
@@ -4031,6 +4068,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <rdfs:label xml:lang="en">roles</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#sample -->
