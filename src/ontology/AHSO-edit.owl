@@ -180,7 +180,18 @@ This annotation gives the specific term name for the concept include din the ont
 
     <!-- https://w3id.org/ahso#SSD_termScopeNote -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termScopeNote"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termScopeNote">
+        <rdfs:comment>From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives any additional notes. Look for this name in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;. Codes are stored in the property &quot;SSD_termCode&quot;.</rdfs:comment>
+    </owl:AnnotationProperty>
     
 
 
@@ -984,7 +995,8 @@ This annotation gives the specific term name for the concept include din the ont
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campylobacter hyoilei</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibrio coli</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campylobacter coli</rdfs:label>
-        <SSD_termCode xml:lang="en">RF-00000054-MCG</SSD_termCode>
+        <SSD_catalogue>PARAM</SSD_catalogue>
+        <SSD_termCode>RF-00000054-MCG</SSD_termCode>
     </owl:Class>
     
 
@@ -1002,7 +1014,8 @@ This annotation gives the specific term name for the concept include din the ont
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spirillum fetus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibrio fetus</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campylobacter fetus</rdfs:label>
-        <SSD_termCode xml:lang="en">RF-00000055-MCG</SSD_termCode>
+        <SSD_catalogue>PARAM</SSD_catalogue>
+        <SSD_termCode>RF-00000055-MCG</SSD_termCode>
     </owl:Class>
     
 
@@ -1962,15 +1975,6 @@ This annotation gives the specific term name for the concept include din the ont
     <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000_000025">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#zoo_info"/>
         <rdfs:label xml:lang="en">Species</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ahso#AHSO_0003_000021 -->
-
-    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0003_000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#sampling_context"/>
-        <rdfs:label xml:lang="en">Official programme</rdfs:label>
     </owl:Class>
     
 
@@ -3229,7 +3233,7 @@ This annotation gives the specific term name for the concept include din the ont
     <!-- https://w3id.org/ahso#K009A -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#K009A">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0003_000021"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#sampling_context"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (EU) programme</rdfs:label>
         <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K009A</SSD_termCode>
         <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official (EU) programme</SSD_termExtendedName>
@@ -3946,9 +3950,9 @@ This annotation gives the specific term name for the concept include din the ont
     
 
 
-    <!-- https://w3id.org/ahso#other -->
+    <!-- https://w3id.org/ahso#other_hazards -->
 
-    <owl:Class rdf:about="https://w3id.org/ahso#other">
+    <owl:Class rdf:about="https://w3id.org/ahso#other_hazards">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#hazard"/>
         <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
         <rdfs:label xml:lang="en">Other</rdfs:label>
