@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="imports/NCBI_campy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="imports/NCBI_species1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="http://purl.obolibrary.org/obo/uberon.owl" uri="imports/uberon_svala_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="https://w3id.org/ahso" uri="AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="shadowed:https://w3id.org/ahso" uri="imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1533737375563" name="shadowed:https://w3id.org/ahso" uri="imports/venom.owl"/>
+    </group>
+</catalog>
