@@ -133,6 +133,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <!-- https://w3id.org/ahso#containsObservation -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#containsObservation">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ahso#hasContextMember"/>
         <owl:inverseOf rdf:resource="https://w3id.org/ahso#observedInObservationContext"/>
@@ -155,6 +156,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
 
     <!-- https://w3id.org/ahso#containsSample -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#containsSample">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ahso#hasContextMember"/>
@@ -184,6 +186,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">hasAgeCategory</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#hasAnatomicalLocation -->
@@ -263,6 +266,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     <!-- https://w3id.org/ahso#hasMemberActivity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasMemberActivity">
+
         <owl:inverseOf rdf:resource="https://w3id.org/ahso#isMemberOfSystem"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
@@ -271,6 +275,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">has member activity</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#hasProductionType -->
@@ -333,6 +338,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:domain rdf:resource="https://w3id.org/ahso#observation_context"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#sample"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#population_unit"/>
+
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ahso#containsObservation"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasSubject"/>
@@ -378,6 +384,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:domain rdf:resource="https://w3id.org/ahso#observation_context"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#sample"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#individual"/>
+
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/ahso#containsObservation"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasSubjectAnimal"/>
@@ -399,6 +406,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:domain rdf:resource="https://w3id.org/ahso#sample"/>
         <rdfs:range rdf:resource="https://w3id.org/ahso#breed"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
+
             <rdf:Description rdf:about="https://w3id.org/ahso#containsObservation"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasSubjectBreed"/>
         </owl:propertyChainAxiom>
@@ -413,6 +421,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">hasSubjectBreed</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#hasSubjectHerd -->
@@ -434,6 +443,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">hasSubjectHerd</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#hasSubjectProductionType -->
@@ -458,6 +468,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">hasSubjectProductionType</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#hasSubjectSpecies -->
@@ -550,9 +561,10 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
             <rdf:Description rdf:about="https://w3id.org/ahso#isMemberOf"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#isOwnedBy"/>
         </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">isOwnedBy</rdfs:label>
+        <rdfs:label xml:lang="en">hasSubjectProductionType</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#isOwnerOf -->
@@ -564,9 +576,18 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
             <rdf:Description rdf:about="https://w3id.org/ahso#isOwnerOf"/>
             <rdf:Description rdf:about="https://w3id.org/ahso#hasMember"/>
         </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">isOwnerOf</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/ahso#containsSample"/>
+            <rdf:Description rdf:about="https://w3id.org/ahso#hasSubjectSpecies"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/ahso#hasSubject"/>
+            <rdf:Description rdf:about="https://w3id.org/ahso#hasSpecies"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">hasSubjectSpecies</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#isRecordedBy -->
@@ -577,6 +598,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">isRecordedBy</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#isSampleOf -->
@@ -595,6 +617,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#observedHealthFinding -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#observedHealthFinding">
@@ -610,6 +633,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#observedInObservationContext -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ahso#observedInObservationContext">
@@ -619,6 +643,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label>observed in observation context</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#observedMorphology -->
@@ -639,6 +664,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label>observed morphology</rdfs:label>
     </owl:ObjectProperty>
     
+
 
 
     <!-- https://w3id.org/ahso#observedPathology -->
@@ -722,6 +748,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <!-- https://w3id.org/ahso#hasAgeValue -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#hasAgeValue">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ahso#hasAgeInformation"/>
         <rdfs:domain rdf:resource="https://w3id.org/ahso#individual"/>
@@ -786,7 +813,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#hasAgeValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ahso#hasAgeInformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#individual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label xml:lang="en">hasAgeValue</rdfs:label>
+    </owl:DatatypeProperty>
     
+
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
@@ -864,6 +898,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#birth -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#birth">
@@ -871,6 +906,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Birth</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#breed -->
@@ -882,6 +918,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#castrated_male -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#castrated_male">
@@ -889,6 +926,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Castrated male</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#death -->
@@ -900,6 +938,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#declared_movement -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#declared_movement">
@@ -907,6 +946,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Declared movement</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#fallen_stock -->
@@ -918,6 +958,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#fallen_stock_destroyed_farm -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#fallen_stock_destroyed_farm">
@@ -925,6 +966,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Fallen stock destroyed on farm</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#fallen_stock_not_destroyed_farm -->
@@ -936,6 +978,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#female -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#female">
@@ -943,6 +986,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Female</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#geo_info -->
@@ -953,12 +997,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#health_finding -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#health_finding">
         <rdfs:label>Health finding</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#herd -->
@@ -970,6 +1016,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#home_slaughter -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#home_slaughter">
@@ -977,6 +1024,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Home slaughter</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#individual -->
@@ -988,6 +1036,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#male -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#male">
@@ -995,6 +1044,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Male</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#morpho_finding -->
@@ -1039,12 +1089,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#patho_finding -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#patho_finding">
         <rdfs:label>Pathological process</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#pathological_examination -->
@@ -1056,12 +1108,14 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#population_unit -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#population_unit">
         <rdfs:label xml:lang="en">Population unit</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#production_type -->
@@ -1082,12 +1136,15 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#registry -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#registry">
         <rdfs:label xml:lang="en">Registry</rdfs:label>
-    </owl:Class>
+
+</owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#sample -->
@@ -1096,6 +1153,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#sex -->
@@ -1107,6 +1165,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#slaughter -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#slaughter">
@@ -1114,6 +1173,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Slaughter</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#species -->
@@ -1125,6 +1185,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#stillbirth_event -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#stillbirth_event">
@@ -1134,6 +1195,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
     
 
 
+
     <!-- https://w3id.org/ahso#surveillance_activity -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#surveillance_activity">
@@ -1141,6 +1203,7 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
         <rdfs:label xml:lang="en">Surveillance activity</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- https://w3id.org/ahso#surveillance_system -->
