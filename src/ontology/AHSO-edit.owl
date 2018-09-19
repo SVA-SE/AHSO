@@ -2313,6 +2313,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1515976"/>
@@ -4057,6 +4058,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#actors -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#actors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Health and surveillance actors</rdfs:label>
     </owl:Class>
     
@@ -4083,6 +4085,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#animal_production_parameters -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#animal_production_parameters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Animal Production parameters</rdfs:label>
     </owl:Class>
     
@@ -4212,6 +4215,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#geo_info -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#geo_info">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Geographical Information</rdfs:label>
     </owl:Class>
     
@@ -4220,6 +4224,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#hazard -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#hazard">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Hazard</rdfs:label>
     </owl:Class>
     
@@ -4228,6 +4233,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#health_finding -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#health_finding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Health Finding</rdfs:label>
     </owl:Class>
     
@@ -4245,6 +4251,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#lab_analysis -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#lab_analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#health_finding"/>
         <rdfs:label xml:lang="en">Laboratorial analysis</rdfs:label>
     </owl:Class>
     
@@ -4272,6 +4279,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#morpho_finding -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#morpho_finding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Morphological description</rdfs:label>
     </owl:Class>
     
@@ -4308,6 +4316,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#observation -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#observation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
     </owl:Class>
     
@@ -4316,6 +4325,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#observation_context -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#observation_context">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label>Observation context</rdfs:label>
     </owl:Class>
     
@@ -4344,6 +4354,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#patho_finding -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#patho_finding">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Pathological finding</rdfs:label>
     </owl:Class>
     
@@ -4371,6 +4382,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#population_unit -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#population_unit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Population unit</rdfs:label>
     </owl:Class>
     
@@ -4398,6 +4410,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#registry -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#registry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Registry</rdfs:label>
     </owl:Class>
     
@@ -4425,6 +4438,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#sample -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#sample">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
@@ -4490,6 +4504,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/ahso#surv_parameters -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#surv_parameters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Surveillance and monitoring parameters</rdfs:label>
     </owl:Class>
     
@@ -4542,9 +4557,18 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- https://w3id.org/ahso#waiting_placement -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#waiting_placement">
+        <rdfs:label xml:lang="en">awaiting ontology review/placement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#zoo_info -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#zoo_info">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
         <rdfs:label xml:lang="en">Zoographical Information</rdfs:label>
     </owl:Class>
 </rdf:RDF>
