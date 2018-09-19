@@ -285,6 +285,12 @@ This annotation gives any additional notes. Look for this name in the specific c
     
 
 
+    <!-- https://w3id.org/ahso#ahso_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#ahso_label"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1033,6 +1039,7 @@ This annotation gives any additional notes. Look for this name in the specific c
         <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+        <ahso_label xml:lang="en">quality/roles</ahso_label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
