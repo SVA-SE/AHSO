@@ -4251,6 +4251,15 @@ This assumes that data processed for surveillance comes mainly form traditional 
     
 
 
+    <!-- https://w3id.org/ahso#deprecated -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#deprecated">
+        <rdfs:label xml:lang="en">zObsolete / deprecated / not in use classes</rdfs:label>
+        <owl:deprecated xml:lang="en"></owl:deprecated>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ahso#establishments -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#establishments">
@@ -4411,8 +4420,9 @@ This assumes that data processed for surveillance comes mainly form traditional 
     <!-- https://w3id.org/ahso#observation -->
 
     <owl:Class rdf:about="https://w3id.org/ahso#observation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#waiting_placement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#deprecated"/>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
+        <owl:deprecated xml:lang="en">true</owl:deprecated>
     </owl:Class>
     
 
