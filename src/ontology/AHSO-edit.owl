@@ -17,7 +17,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/ahso">
         <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
-        <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy</terms:contributor>
+        <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy, Victor Oliveira</terms:contributor>
         <owl:versionInfo>0.1.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">This is an ontology for health surveillance, assuming that surveillance data is recorded at three main levels:
 
@@ -67,7 +67,16 @@ For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIM
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -2400,6 +2409,30 @@ Previous. An information content entity is a non-realizable information entity t
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">For instance, in a dataset of disease notifications, each new disease notification, along with every data recorded about it, typically individual rows in the dataset, would be a new observation.
+In reports of surveillance activities, typical examples are yearly reports, each row is an observation, but in this case representing the aggregation of several observations.</obo:IAO_0000112>
+        <terms:description xml:lang="en">A type of data item created specifically to represent individual observations in datasets used for health surveillance analysis and inference at the population level. 
+This assumes that data processed for surveillance comes mainly form traditional tabular formats, and is meant to represent all the information per event/row.</terms:description>
+        <rdfs:label xml:lang="en">Health Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AHSO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AHSO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#AHSO_0000001"/>
+        <obo:IAO_0000112 xml:lang="en">Yearly reports of european member stats to EFSA are examples of aggregated results - each dataset row represents the combined results of all surveillance data collected for the year.</obo:IAO_0000112>
+        <terms:description xml:lang="en">A type of health observation that represents the aggregation of several other individual health observations.</terms:description>
+        <rdfs:label xml:lang="en">Aggregated Results</rdfs:label>
     </owl:Class>
     
 
