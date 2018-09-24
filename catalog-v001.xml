@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="src/ontology/imports/NCBI_campy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="src/ontology/imports/NCBI_species1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="http://purl.obolibrary.org/obo/uberon.owl" uri="src/ontology/imports/uberon_svala_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="https://w3id.org/ahso" uri="AHSO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/svala.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1533733367122" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/venom.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="src/ontology/imports/NCBI_campy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="src/ontology/imports/NCBI_species1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="http://purl.obolibrary.org/obo/bfo.owl" uri="src/ontology/imports/BFO_IAO_top.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="http://purl.obolibrary.org/obo/uberon.owl" uri="src/ontology/imports/uberon_svala_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="https://w3id.org/ahso" uri="AHSO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="shadowed:https://w3id.org/ahso" uri="src/ontology/AHSO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537280432827" name="shadowed:https://w3id.org/ahso" uri="src/ontology/imports/venom.owl"/>
     </group>
 </catalog>
