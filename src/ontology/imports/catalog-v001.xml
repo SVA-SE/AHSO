@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1514448525825" name="http://purl.obolibrary.org/obo/uberon.owl" uri="uberon_svala_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1514448525825" name="duplicate:https://w3id.org/ahso" uri="svala.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1514448525825" name="duplicate:https://w3id.org/ahso" uri="venom.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="NCBI_campy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="duplicate:http://purl.bioontology.org/ontology/NCBITAXON" uri="NCBI_species1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="http://purl.obolibrary.org/obo/bfo.owl" uri="BFO_IAO_top.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="http://purl.obolibrary.org/obo/uberon.owl" uri="uberon_svala_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="duplicate:https://w3id.org/ahso" uri="svala.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1537350779533" name="duplicate:https://w3id.org/ahso" uri="venom.owl"/>
     </group>
 </catalog>
