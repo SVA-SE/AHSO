@@ -1,0 +1,1087 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ahso#"
+     xml:base="https://w3id.org/ahso"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:core="http://purl.obolibrary.org/obo/core#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/ahso">
+        <terms:creator>Fernanda Dórea (nanda@datadrivensurveillance.org), Crawford Revie, Ann Lindberg, Eva Blomqvist</terms:creator>
+        <terms:contributor>Flavie Vial, Karl Hammar, Patrick Lambrix, Noel Kennedy, Victor Oliveira</terms:contributor>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <rdfs:comment xml:lang="en">This is an ontology for health surveillance, assuming that surveillance data is recorded at three main levels:
+
+SAMPLE data - data about specific collected samples; OBSERVATIONS, which can aggregate several samples; and OBSERVATIONAL CONTEXT, which is the context in which the observations were made (for instance clinical observation, surveillance sampling, etc). 
+
+HEALTH EVENT is the occurrence in the real World to be modeled. This occurrence is an abstract concept, as it generally cannot be determined what are its boundaries in time, space, or population units. 
+
+We assume that several OBSERVATIONS are derived from each health event, and recorded in the same or different databases - for instance clinical journal, laboratory database, abattoir. At the same time or not. 
+
+AHSO attempts to model these time specific observations. The ontology is focused on the modeling of the animal and health information connected to a single observation, made at a specific point on time. All the information recorded is relative to that specific point in time.
+
+For instance, an animal belongs to a herd, which belongs to an owner, AT THE TIME OF THE OBSERVATION. We do not attempt to model how that animal changed herds on time. Similarly, we do not model clinical progression. It is up to those using the data to create definitions of when two observations should be connected to the same event.</rdfs:comment>
+        <terms:description xml:lang="en">An ontology to support the use of animal health data for data-driven surveillance ontology. Mode details at http://datadrivensurveillance.org.</terms:description>
+        <terms:title>Animal Health Surveillance Ontology (AHSO)</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_catalogue -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_catalogue">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation points to the specific catalague, within SSD2, form which terms were imported.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_termCode -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termCode">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives the specific code for the concept include din the ontology. Look for this code in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;.
+
+Full names are stored in the property &quot;SSD_termExtendedName&quot;.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_termExtendedName -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termExtendedName">
+        <terms:description xml:lang="en">From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives the specific term name for the concept include din the ontology. Look for this name in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;. Codes are stored in the property &quot;SSD_termCode&quot;.</terms:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#SSD_termScopeNote -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#SSD_termScopeNote">
+        <rdfs:comment>From the European Food Safety Agency (EFSA):
+https://zenodo.org/record/344473#.WzvvyvkzYkV
+
+The Data Collection Framework (DCF) application is constituted of an interactive web-based application that aims at facilitating data exchange, data extraction and data reusability. A harmonized terminology is used to collect and analyse data in a coherent way with the aim to support scientific research.
+
+DCF_catalogues file contains all the valid catalogues published in the DCF.  
+
+The SSD2 file contains the controlled terminologies based on the standard description of samples and analytical results (Standard Sample Description Extension), extended to cover additional data collection domains, such as zoonotic agents in food and animals, antimicrobial resistance and food additives.  
+
+This annotation gives any additional notes. Look for this name in the specific catalogue via the annotation property &quot;SSD_catalogue&quot;. Codes are stored in the property &quot;SSD_termCode&quot;.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#ahso_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ahso#ahso_label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ahso#confirmationMethod -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#confirmationMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#health_finding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#hasObjective -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasObjective">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Surveillance_Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#hasSamplingContext -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasSamplingContext">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Sampling_Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#hasSamplingStrategy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasSamplingStrategy">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Sampling_Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#hasSamplingUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#hasSamplingUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Epidemiological_Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#samplingMaterial -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#samplingMaterial">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Matrix"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#samplingStage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#samplingStage">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Establishments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#targetCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#targetCountry">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#targetHazard -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#targetHazard">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#hazard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#targetPopulation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ahso#targetPopulation">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ahso#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ahso#carriedOutInYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#carriedOutInYear">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#caseDefinition -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#caseDefinition">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#nrDomesticCases -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#nrDomesticCases">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#nrOfCases -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#nrOfCases">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#nrSamplesPositive -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#nrSamplesPositive">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#nrSamplesTested -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#nrSamplesTested">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#targetPopulationSize -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#targetPopulationSize">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ahso#targetPopulationSizeIn_EpiUnits -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ahso#targetPopulationSizeIn_EpiUnits">
+        <rdfs:domain rdf:resource="https://w3id.org/ahso#Surveillance_Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#microorganisms"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biota</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_genus"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12361288</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16627635</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:1704793</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:19801389</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:29034857</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ampylobacter</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campylobacter</rdfs:label>
+        <SSD_termCode xml:lang="en">RF-00000042-MCG</SSD_termCode>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_superkingdom"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425795</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425797</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10490293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10843050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939673</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939677</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11211268</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11411719</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11540071</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542087</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11760965</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12054223</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2112744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:270744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8123559</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8590690</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9103655</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9336922</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eubacteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monera</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procaryotae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryota</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryotae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacteria</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not Bacteria Haeckel 1894</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prokaryote</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prokaryotes</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT01A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT01A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYTYP</SSD_catalogue>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT01A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT02A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT02A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serotyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT02A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serotyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT03A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT03A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phagetyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT03A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phagetyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT04A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT04A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susceptibility test</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT04A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susceptibility test</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT05A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT05A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speciation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT05A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speciation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT06A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT06A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screening</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT06A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screening</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT07A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT07A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantification</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT07A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantification</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT08A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT08A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confirmation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT08A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confirmation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT09A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT09A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determination</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT09A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determination</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT10A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT10A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enumeration</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT10A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enumeration</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT11A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT11A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate characterisation</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT11A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate characterisation</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT12A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT12A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminatory test</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT12A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminatory test</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#AT13A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#AT13A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#F099A"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular characterisation/genotyping</rdfs:label>
+        <SSD_termCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT13A</SSD_termCode>
+        <SSD_termExtendedName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular characterisation/genotyping</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#Clinical_case -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Clinical_case">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#health_finding"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#Country -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Country"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Epidemiological_Unit -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Epidemiological_Unit"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Establishments -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Establishments">
+        <rdfs:label xml:lang="en">establishments</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPNT</SSD_catalogue>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#F099A -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#F099A">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#lab_analysis"/>
+        <rdfs:label xml:lang="en">Microbiological tests</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYMD</SSD_catalogue>
+        <SSD_termCode xml:lang="en">F099A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Microbiological tests</SSD_termExtendedName>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#Matrix -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Matrix"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Sampling_Context -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Sampling_Context"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Sampling_Strategy -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Sampling_Strategy"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Species -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Species"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Surveillance_Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Surveillance_Activity"/>
+    
+
+
+    <!-- https://w3id.org/ahso#Surveillance_Objective -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#Surveillance_Objective"/>
+    
+
+
+    <!-- https://w3id.org/ahso#hazard -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#hazard">
+        <rdfs:label xml:lang="en">Hazard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#health_finding -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#health_finding">
+        <rdfs:label xml:lang="en">Health Finding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#lab_analysis -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#lab_analysis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#health_finding"/>
+        <rdfs:label xml:lang="en">Laboratorial analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ahso#microorganisms -->
+
+    <owl:Class rdf:about="https://w3id.org/ahso#microorganisms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ahso#hazard"/>
+        <rdfs:comment xml:lang="en">from the RAKIP project: https://goo.gl/wbFoZU</rdfs:comment>
+        <rdfs:label xml:lang="en">Microorganisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ahso#A056J -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#A056J">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Species"/>
+        <rdfs:label xml:lang="en">Human (as organism)</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTX</SSD_catalogue>
+        <SSD_termCode xml:lang="en">A056J</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Human (as organism)</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Humans as living organisms of the taxonomic group Homo sapiens (family Hominidae). The part considered is by default the whole living organism.£https://en.wikipedia.org/wiki/Human</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#A0C78 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#A0C78">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Species"/>
+        <rdfs:label xml:lang="en">Gallus gallus broiler</rdfs:label>
+        <SSD_catalogue xml:lang="en">MTX</SSD_catalogue>
+        <SSD_termCode xml:lang="en">A0C78</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Gallus gallus broiler</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Gallus gallus animals raised for meat production purposes. The part considered is by default the whole living organism.£https://en.wikipedia.org/wiki/Broiler</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#Campylobacter_spp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#Campylobacter_spp">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_194"/>
+        <SSD_termCode xml:lang="en">RF-00000044-MCG</SSD_termCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#E311A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#E311A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Establishments"/>
+        <rdfs:label xml:lang="en">Slaughterhouse</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPNT</SSD_catalogue>
+        <SSD_termCode xml:lang="en">E311A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Slaughterhouse</SSD_termExtendedName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#F163A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#F163A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#AT01A"/>
+        <rdfs:label xml:lang="en">ISO 10272-1:2006  Campylobacter</rdfs:label>
+        <SSD_catalogue xml:lang="en">ANLYMD</SSD_catalogue>
+        <SSD_termCode xml:lang="en">F163A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">ISO 10272-1:2006  Campylobacter</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Microbiology of food and animal feeding stuffs -- Horizontal method for detection and enumeration of Campylobacter spp. -- Part 1: Detection method</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#G199A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#G199A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Epidemiological_Unit"/>
+        <rdfs:label xml:lang="en">individual</rdfs:label>
+        <SSD_termExtendedName xml:lang="en">animal</SSD_termExtendedName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#G200A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#G200A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Epidemiological_Unit"/>
+        <rdfs:label xml:lang="en">slaughter batch</rdfs:label>
+        <SSD_termCode xml:lang="en">G200A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">slaughter batch</SSD_termExtendedName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#K020A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#K020A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Context"/>
+        <rdfs:label xml:lang="en">Clinical investigations</rdfs:label>
+        <SSD_catalogue xml:lang="en">PRGTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">K020A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Clinical investigations</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">clinical investigation in animals is considered as a selective way of sampling and results in a number of samples obtained in a passive way. The samples obtained and analysed via clinical investigations are heterogeneous with relation to the species (matrix) as well as type of samples. The reason for the analysis of the samples is very often a clinical examination of (diseased) animals by a veterinarian and/or specific clinical signs observed by the farmer and/or veterinarian.</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#K023A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#K023A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Context"/>
+        <rdfs:label xml:lang="en">Monitoring - active</rdfs:label>
+        <SSD_catalogue xml:lang="en">PRGTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">K023A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Monitoring - active</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">active monitoring programme of zoonotic agents or antimicrobial resistance in food and animals, based on random sampling strategies of the population of interest, stratified according to the relevant subcategories of the population. The sampling strategy should ensure that the sample is representative of the population of interest and that the sampling method is robust. A planned monitoring of wild life for e.g Trichinella or Echinococcus via organised hunting schemes should be considered as active monitoring.</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#K024A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#K024A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Context"/>
+        <rdfs:label xml:lang="en">Monitoring - passive</rdfs:label>
+        <SSD_catalogue xml:lang="en">PRGTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">K024A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Monitoring - passive</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">passive monitoring programme of zoonotic agents or antimicrobial resistance that includes information from diagnostic testing, or a representative selection of this information. Data on the prevalence of the zoonotic agents and on antimicrobial resistance provided by passive monitoring programmes are typically derived from diseased animals (clinical investigations, observed syndromes, etc).</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#S002A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#S002A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Matrix"/>
+        <rdfs:label xml:lang="en">animal sample - caecum</rdfs:label>
+        <SSD_catalogue xml:lang="en">ZOO_CAT_SMPTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S002A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">animal sample - caecum</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">animal sample - caecum</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#S005A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#S005A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Matrix"/>
+        <rdfs:label xml:lang="en">animal sample - faeces</rdfs:label>
+        <SSD_catalogue xml:lang="en">ZOO_CAT_SMPTYP</SSD_catalogue>
+        <SSD_termCode xml:lang="en">S005A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">animal sample - faeces</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">animal sample - faeces</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#SE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#SE">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Country"/>
+        <rdfs:label xml:lang="en">Sweden</rdfs:label>
+        <SSD_catalogue xml:lang="en">COUNTRY</SSD_catalogue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#ST20A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#ST20A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Strategy"/>
+        <rdfs:label xml:lang="en">Selective sampling</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPSTR</SSD_catalogue>
+        <SSD_termCode xml:lang="en">ST20A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Selective sampling</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Selective sampling—planned strategy whereby the selection of the sample is from previously defined ‘high-risk’ population groups. Samples are normally selected to either illustrate or document unsatisfactory conditions or suspected adulteration of a product. The sampling is deliberately biased and is directed at the particular products or manufacturers. The sampling procedure can be random or not. The specification of the ‘high-risk’ population comes from either scientific studies or previous analysis and information of other regions or countries. The comparability of the results lies on both the definition of the population to be analysed and the way the samples have been drawn</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#ST30A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#ST30A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Strategy"/>
+        <rdfs:label xml:lang="en">Suspect sampling</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPSTR</SSD_catalogue>
+        <SSD_termCode xml:lang="en">ST30A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Suspect sampling</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Suspect sampling—unplanned selection of a sample whereby the individual units are selected based on the recent judgement and experience regarding the population, lot or sampling frame, e.g. earlier positive samples. The samples obtained from this procedure are not randomly extracted.</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#ST50A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#ST50A">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Sampling_Strategy"/>
+        <rdfs:label xml:lang="en">Census</rdfs:label>
+        <SSD_catalogue xml:lang="en">SAMPSTR</SSD_catalogue>
+        <SSD_termCode xml:lang="en">ST50A</SSD_termCode>
+        <SSD_termExtendedName xml:lang="en">Census</SSD_termExtendedName>
+        <SSD_termScopeNote xml:lang="en">Census—strategy whereby all units of the population are sampled</SSD_termScopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#case_detection -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#case_detection">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Surveillance_Objective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#clinical_campylobacterioris -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#clinical_campylobacterioris">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Clinical_case"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#clinical_gastroenteritis -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#clinical_gastroenteritis">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Clinical_case"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#point_of_care -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#point_of_care">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Establishments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ahso#prevalence_estimation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ahso#prevalence_estimation">
+        <rdf:type rdf:resource="https://w3id.org/ahso#Surveillance_Objective"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
